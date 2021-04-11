@@ -6,14 +6,6 @@ public class Product {
 	public String description;
 	public int quantity;
 
-	public String color;
-	public int weight;
-
-	public String type;
-	public int length;
-	public int width;
-	public int height;
-
 	public Product(int price, String name, String description, int quantity) {
 		this.price = price;
 		this.name = name;
@@ -21,32 +13,15 @@ public class Product {
 		this.quantity = quantity;
 	}
 
-	public Product(String color, int weight) {
-		this.color = color;
-		this.weight = weight;
+	public Product() {
+
 	}
 
-	public Product(String type, int length, int width, int height, int weight) {
-		this.type = type;
-		this.length = length;
-		this.width = width;
-		this.height = height;
-		this.weight = weight;
-	}
-
-	public int getPrice() {
-		return price;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public String getDescription() {
-		return description;
-	}
-
-	public int getQuantity() {
-		return quantity;
+	public void productMethod() {
+		System.out.println("--- Product ---");
+		System.out.println("Price: " + price);
+		System.out.println("Name: " + name);
+		System.out.println("Description: " + description);
+		System.out.println("Quantity: " + quantity);
 	}
 }

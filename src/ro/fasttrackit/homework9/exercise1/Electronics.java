@@ -1,9 +1,22 @@
 package ro.fasttrackit.homework9.exercise1;
 
 public class Electronics extends Product {
+	public String type;
+	public int length;
+	public int width;
+	public int height;
+	public int weight;
+
+	public Electronics(String type, int length, int width, int height, int weight) {
+		this.type = type;
+		this.length = length;
+		this.width = width;
+		this.height = height;
+		this.weight = weight;
+	}
 
 	public Electronics() {
-		super("Microwave", 50, 30, 25, 12);
+
 	}
 
 	public void electronicsMethod() {

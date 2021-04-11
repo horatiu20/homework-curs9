@@ -10,19 +10,14 @@ Create a Main where you use them.*/
 public class Main {
 	public static void main(String[] args) {
 		Product product = new Product(1000, "ASUS", "Laptop", 1);
-		Cosmetics cosmetic = new Cosmetics();
-		Electronics electronic = new Electronics();
-		Fridge fridge = new Fridge();
+		Cosmetics cosmetic = new Cosmetics("blue", 150);
+		Electronics electronic = new Electronics("Microwave", 50, 30, 25, 12);
+		Fridge fridge = new Fridge(-2);
 
-		System.out.println("--- Product ---");
-		System.out.println("Price: " + product.getPrice());
-		System.out.println("Name: " + product.getName());
-		System.out.println("Description: " + product.getDescription());
-		System.out.println("Quantity: " + product.getQuantity());
-
+		product.productMethod();
 		cosmetic.cosmeticsMethod();
 		electronic.electronicsMethod();
-		fridge.fridgeMethod(-2);
+		fridge.fridgeMethod();
 
 	}
 }

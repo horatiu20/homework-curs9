@@ -6,9 +6,12 @@ import java.time.LocalDateTime;
 hint: for dates use LocalDateTime*/
 
 public interface Person {
-	String firstName;
-	String lastName;
-	LocalDateTime birthDay;
-	String address;
+	void getFirstName(String firstName);
+
+	void getLastName(String lastName);
+
+	void getLocalDateTime(LocalDateTime birthDay);
+
+	void getAddress(String address);
 
 }

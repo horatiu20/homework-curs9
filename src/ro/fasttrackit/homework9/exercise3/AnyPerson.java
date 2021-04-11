@@ -9,6 +9,11 @@ public class AnyPerson {
 	public AnyPerson(String fullName, LocalDateTime birthday) {
 		this.fullName = fullName;
 		this.birthday = birthday;
-
 	}
+
+	public String getFullName(){
+		return fullName;
+	}
+
+
 }
