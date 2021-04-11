@@ -8,6 +8,7 @@ public class Cosmetics extends Product {
 		this.color = color;
 		this.weight = weight;
 	}
+
 	public void cosmeticsMethod() {
 		System.out.println("--- Cosmetics ---");
 		System.out.println("Color: " + color);
