@@ -1,19 +1,13 @@
 package ro.fasttrackit.homework9.exercise3;
 
-import java.time.LocalDateTime;
-
 public class AnyPerson {
-	private String fullName;
-	private LocalDateTime birthday;
+	private final String fullName;
 
-	public AnyPerson(String fullName, LocalDateTime birthday) {
+	public AnyPerson(String fullName) {
 		this.fullName = fullName;
-		this.birthday = birthday;
 	}
 
-	public String getFullName(){
+	public String getFullName() {
 		return fullName;
 	}
-
-
 }

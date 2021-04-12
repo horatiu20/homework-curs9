@@ -10,7 +10,7 @@ public interface Person {
 
 	void getLastName(String lastName);
 
-	void getLocalDateTime(LocalDateTime birthDay);
+	void getBirthday(LocalDateTime birthDay);
 
 	void getAddress(String address);
 

@@ -1,8 +1,8 @@
 package ro.fasttrackit.homework9.exercise1;
 
 public class Cosmetics extends Product {
-	public String color;
-	public int weight;
+	protected String color;
+	protected int weight;
 
 	public Cosmetics(String color, int weight) {
 		this.color = color;

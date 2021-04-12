@@ -1,11 +1,11 @@
 package ro.fasttrackit.homework9.exercise1;
 
 public class Electronics extends Product {
-	public String type;
-	public int length;
-	public int width;
-	public int height;
-	public int weight;
+	protected String type;
+	protected int length;
+	protected int width;
+	protected int height;
+	protected int weight;
 
 	public Electronics(String type, int length, int width, int height, int weight) {
 		this.type = type;

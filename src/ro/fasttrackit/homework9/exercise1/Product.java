@@ -1,10 +1,10 @@
 package ro.fasttrackit.homework9.exercise1;
 
 public class Product {
-	public int price;
-	public String name;
-	public String description;
-	public int quantity;
+	protected int price;
+	protected String name;
+	protected String description;
+	protected int quantity;
 
 	public Product(int price, String name, String description, int quantity) {
 		this.price = price;
