@@ -10,8 +10,4 @@ public abstract class Programmer extends Employee {
 	public String getLanguage() {
 		return language;
 	}
-
-	public void getLanguage(String language) {
-		System.out.println("Programming language: " + getLanguage());
-	}
 }

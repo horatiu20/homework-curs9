@@ -10,9 +10,5 @@ public abstract class DatabaseAdmin extends Employee {
 	public String getDbTechnology() {
 		return dbTechnology;
 	}
-
-	public void getDbTechnology(String dbTechnology) {
-		System.out.println("Database technology: " + getDbTechnology());
-	}
 }
 
