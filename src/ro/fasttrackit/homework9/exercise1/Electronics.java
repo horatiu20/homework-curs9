@@ -1,11 +1,11 @@
 package ro.fasttrackit.homework9.exercise1;
 
 public class Electronics extends Product {
-	protected String type;
-	protected int length;
-	protected int width;
-	protected int height;
-	protected int weight;
+	private String type;
+	private int length;
+	private int width;
+	private int height;
+	private int weight;
 
 	public Electronics(String type, int length, int width, int height, int weight) {
 		this.type = type;
@@ -19,12 +19,32 @@ public class Electronics extends Product {
 
 	}
 
+	public String getType() {
+		return type;
+	}
+
+	public int getLength() {
+		return length;
+	}
+
+	public int getWidth() {
+		return width;
+	}
+
+	public int getHeight() {
+		return height;
+	}
+
+	public int getWeight() {
+		return weight;
+	}
+
 	public void electronicsMethod() {
 		System.out.println("--- Electronics ---");
-		System.out.println("Type: " + type);
-		System.out.println("Length: " + length);
-		System.out.println("Width: " + width);
-		System.out.println("Height: " + height);
-		System.out.println("Weight: " + weight);
+		System.out.println("Type: " + getType());
+		System.out.println("Length: " + getLength());
+		System.out.println("Width: " + getWidth());
+		System.out.println("Height: " + getHeight());
+		System.out.println("Weight: " + getWeight());
 	}
 }

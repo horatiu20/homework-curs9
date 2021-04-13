@@ -1,14 +1,18 @@
 package ro.fasttrackit.homework9.exercise2;
 
 public abstract class DatabaseAdmin extends Employee {
-	protected String dbTechnology;
+	private String dbTechnology;
 
 	public DatabaseAdmin(String dbTechnology) {
 		this.dbTechnology = dbTechnology;
 	}
 
+	public String getDbTechnology() {
+		return dbTechnology;
+	}
+
 	public void getDbTechnology(String dbTechnology) {
-		System.out.println("Database technology: " + dbTechnology);
+		System.out.println("Database technology: " + getDbTechnology());
 	}
 }
 
