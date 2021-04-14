@@ -1,9 +1,10 @@
 package ro.fasttrackit.homework9.exercise2;
 
 public abstract class DatabaseAdmin extends Employee {
-	private String dbTechnology;
+	private final String dbTechnology;
 
 	public DatabaseAdmin(String dbTechnology) {
+		super(dbTechnology);
 		this.dbTechnology = dbTechnology;
 	}
 
@@ -11,4 +12,3 @@ public abstract class DatabaseAdmin extends Employee {
 		return dbTechnology;
 	}
 }
-

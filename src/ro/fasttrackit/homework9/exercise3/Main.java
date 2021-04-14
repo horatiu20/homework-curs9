@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 
 public class Main {
 	public static void main(String[] args) {
-		AnyPerson person = new AnyPerson("Horatiu Pacurar", LocalDateTime.of(1985, 8, 20, 7, 30));
+		AnyPerson person = new Person();
 		LocalDateTime personAge = LocalDateTime.now();
 		System.out.println("Name: " + person.getFullName());
 		System.out.println("Age: " + (personAge.getYear() - person.getBirthday().getYear()) + " years old");

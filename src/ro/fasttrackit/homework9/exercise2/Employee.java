@@ -13,8 +13,7 @@ public abstract class Employee implements Person {
 		this.salary = salary;
 	}
 
-	public Employee() {
-
+	public Employee(String language) {
 	}
 
 	public LocalDateTime getDateOfEmployment() {

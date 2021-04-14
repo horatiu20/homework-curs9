@@ -8,6 +8,7 @@ public class Electronics extends Product {
 	private int weight;
 
 	public Electronics(String type, int length, int width, int height, int weight) {
+		super(type, length, width, height, weight);
 		this.type = type;
 		this.length = length;
 		this.width = width;
@@ -15,8 +16,8 @@ public class Electronics extends Product {
 		this.weight = weight;
 	}
 
-	public Electronics() {
-
+	public Electronics(int temperature) {
+		super(temperature);
 	}
 
 	public String getType() {
@@ -37,14 +38,5 @@ public class Electronics extends Product {
 
 	public int getWeight() {
 		return weight;
-	}
-
-	public void electronicsMethod() {
-		System.out.println("--- Electronics ---");
-		System.out.println("Type: " + getType());
-		System.out.println("Length: " + getLength());
-		System.out.println("Width: " + getWidth());
-		System.out.println("Height: " + getHeight());
-		System.out.println("Weight: " + getWeight());
 	}
 }

@@ -13,8 +13,13 @@ public class Product {
 		this.quantity = quantity;
 	}
 
-	public Product() {
+	public Product(String color, int weight) {
+	}
 
+	public Product(String type, int length, int width, int height, int weight) {
+	}
+
+	public Product(int temperature) {
 	}
 
 	public int getPrice() {
@@ -31,13 +36,5 @@ public class Product {
 
 	public int getQuantity() {
 		return quantity;
-	}
-
-	public void productMethod() {
-		System.out.println("--- Product ---");
-		System.out.println("Price: " + getPrice());
-		System.out.println("Name: " + getName());
-		System.out.println("Description: " + getDescription());
-		System.out.println("Quantity: " + getQuantity());
 	}
 }

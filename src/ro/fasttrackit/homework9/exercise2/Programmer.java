@@ -1,9 +1,10 @@
 package ro.fasttrackit.homework9.exercise2;
 
 public abstract class Programmer extends Employee {
-	private String language;
+	private final String language;
 
 	public Programmer(String language) {
+		super(language);
 		this.language = language;
 	}
 
